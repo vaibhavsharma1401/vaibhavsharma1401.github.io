@@ -90,8 +90,6 @@
 		
 		<script>
 			$(document).ready(function(){
-				var scene = $( '.section_com_text_class' );
-
 				// Initialise the scrollmagic controller
 				var scrollMagicController = new ScrollMagic.Controller({
 					globalSceneOptions:
@@ -103,15 +101,16 @@
 
 				// Loop through each scene and create a new
 				// scrollmagic scene for each one
-				scene.each( function() 
+				$( '.section_com_text_class' ).each(function (i, section) {
 				{
-					var scene = new ScrollMagic.Scene({
+					var $section = $(section);
+					new ScrollMagic.Scene({
 						triggerElement: this
 					})
 					.setPin( this )
 					.addTo( scrollMagicController )
 					.addIndicators()
-					.setClassToggle( scene, 'is-active' )
+					.setClassToggle( section, 'is-active' )
 				});
 
 
