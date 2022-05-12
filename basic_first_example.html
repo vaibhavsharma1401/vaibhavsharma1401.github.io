@@ -99,7 +99,6 @@
 					globalSceneOptions:
 					{
 						triggerHook: 'onLeave',
-						offset: 50,
 						duration: $( '.section_com_class' ).height() + '%', 
 					}
 				});
@@ -112,7 +111,7 @@
 					new ScrollMagic.Scene({
 						triggerElement: this
 					})
-					.setPin( this )
+					.setPin( this , {pushFollowers: false})
 					.addTo( scrollMagicController )
 					.addIndicators()
 					.setClassToggle( section, 'is-active' )
