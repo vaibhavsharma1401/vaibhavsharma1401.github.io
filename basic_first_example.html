@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="main_inner">
                         <div class="pinned_heading_start">PINNED SECTION START</div>
-						<div class="section_1 section_com_class" id="sec_1">
+						<div class="section_1 section_com_text_class" id="sec_1">
                             <h1 class="section_com_text_class">This is a 1 Heading</h1>
 							<h1 class="section_com_text_class">This is a 2 Heading</h1>
 							<h1 class="section_com_text_class">This is a 3 Heading</h1>
@@ -67,22 +67,22 @@
 							<h1 class="section_com_text_class">This is a 5 Heading</h1>
 							<h1 class="section_com_text_class">This is a 6 Heading</h1>
                         </div>
-                        <div class="section_1 section_com_class" id="sec_1">
+                        <div class="section_1 section_com_text_class" id="sec_1">
                             <h1 class="section_com_text_class">This is a 1 Heading</h1>
                         </div>
-                        <div class="section_2 section_com_class" id="sec_2">
+                        <div class="section_2 section_com_text_class" id="sec_2">
                             <h1 class="section_com_text_class">This is a 2 Heading</h1>
                         </div>
-                        <div class="section_3 section_com_class" id="sec_3">
+                        <div class="section_3 section_com_text_class" id="sec_3">
                             <h1 class="section_com_text_class">This is a 3 Heading</h1>
                         </div>
-                        <div class="section_4 section_com_class" id="sec_4">
+                        <div class="section_4 section_com_text_class" id="sec_4">
                             <h1 class="section_com_text_class">This is a 4 Heading</h1>
                         </div>
-                        <div class="section_5 section_com_class" id="sec_5">
+                        <div class="section_5 section_com_text_class" id="sec_5">
                             <h1 class="section_com_text_class">This is a 5 Heading</h1>
                         </div>
-                        <div class="section_6 section_com_class" id="sec_6">
+                        <div class="section_6 section_com_text_class" id="sec_6">
                             <h1 class="section_com_text_class">This is a 6 Heading</h1>
                         </div>
                         <div class="pinned_heading_close">PINNED SECTION CLOSE</div>
@@ -99,13 +99,13 @@
 					globalSceneOptions:
 					{
 						triggerHook: 'onLeave',
-						duration: $( '.section_com_class' ).height() + '%', 
+						duration: $( '.section_com_text_class' ).height() + '%', 
 					}
 				});
 
 				// Loop through each scene and create a new
 				// scrollmagic scene for each one
-				$( '.section_com_class' ).each(function (i, section) {
+				$( '.section_com_text_class' ).each(function (i, section) {
 				
 					var $section = $(section);
 					new ScrollMagic.Scene({
