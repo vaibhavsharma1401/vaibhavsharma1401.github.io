@@ -70,7 +70,7 @@
                         <div class="section_5 section_com_class" id="sec_5">
                             <h1>This is a 5 Heading</h1>
                         </div>
-                        <div class="section_6" id="sec_6">
+                        <div class="section_6 section_com_class" id="sec_6">
                             <h1>This is a 6 Heading</h1>
                         </div>
                         <div class="pinned_heading_close">PINNED SECTION CLOSE</div>
@@ -88,13 +88,14 @@
 				var scrollMagicController = new ScrollMagic.Controller({
 					globalSceneOptions:
 					{
-						triggerHook: 'onLeave'
+						triggerHook: 'onLeave',
+						duration: '50%'
 					}
 				});
 
 				// Loop through each scene and create a new
 				// scrollmagic scene for each one
-			/*	scene.each( function() 
+				scene.each( function() 
 				{
 					var scene = new ScrollMagic.Scene({
 						triggerElement: this
@@ -103,13 +104,8 @@
 					.addTo( scrollMagicController )
 					.addIndicators()
 					.setClassToggle( scene, 'is-active' )
-				});*/
-				
-				var scene = new ScrollMagic.Scene({triggerElement: "#sec_6", duration: 300})
-						.setPin(this)
-						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-						.addTo(scrollMagicController)
-						.setClassToggle( scene, 'is-active' );
+				});
+
 
 			});
 		</script>
