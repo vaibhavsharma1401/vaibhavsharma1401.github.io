@@ -17,7 +17,7 @@
 				width:100px;
 				height:100px;
 				top: 50%;
-				left: 50%;
+				left: 20%;
 				margin: -50px 0 0 -50px;
 				background-color: #000;
 			}
@@ -47,22 +47,22 @@
  
 				var tl = new TimelineMax();
 				tl.to('.box', 1, {
-					xPercent: '+=100',
+					xPercent: '+=200',
 				}).to('.box', 1, {
-					yPercent: '+=100',
+					yPercent: '+=200',
 				}).to('.box', 1, {
-					xPercent: '-=100',
+					xPercent: '-=200',
 				}).to('.box', 1, {
-					yPercent: '-=100',
+					yPercent: '-=200',
 				}).to('.box', 1, {
-					rotation: 180,
+					rotation: 75,
 					backgroundColor: 'blue'
 				});
 				 
 				var scene = new ScrollMagic.Scene({
 					triggerElement: "#trigger1",
-					triggerHook: 0.2,
-					duration: 1000
+					triggerHook: 1,
+					duration: 2000
 				})
 				.setTween(tl)
 				.addIndicators()
