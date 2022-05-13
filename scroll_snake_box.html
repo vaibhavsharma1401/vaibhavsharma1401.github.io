@@ -47,22 +47,22 @@
  
 				var tl = new TimelineMax();
 				tl.to('.box', 1, {
-					xPercent: '+=200',
+					xPercent: '+=50',
 				}).to('.box', 1, {
-					yPercent: '+=200',
+					yPercent: '+=50',
 				}).to('.box', 1, {
-					xPercent: '-=200',
+					xPercent: '-=50',
 				}).to('.box', 1, {
-					yPercent: '-=200',
+					yPercent: '-=50',
 				}).to('.box', 1, {
-					rotation: 75,
+					rotation: 180,
 					backgroundColor: 'blue'
 				});
 				 
 				var scene = new ScrollMagic.Scene({
 					triggerElement: "#trigger1",
-					triggerHook: 1,
-					duration: 2000
+					triggerHook: 0.2,
+					duration: 1000
 				})
 				.setTween(tl)
 				.addIndicators()
